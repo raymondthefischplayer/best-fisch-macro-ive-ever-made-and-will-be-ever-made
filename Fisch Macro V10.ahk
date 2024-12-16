@@ -18,10 +18,10 @@ AutoBlur := true
 AutoShutdown := false
 
 ; How long to wait after fishing before recasting the rod
-RodRecastDelay := 1000
+RodRecastDelay := 10000
 
 ; How long to hold the cast for before releasing
-HoldRodCastDuration := 1000
+HoldRodCastDuration := 2000
 
 ; How long to wait for the bobber to land in water
 WaitForBobberDelay := 1000
@@ -58,7 +58,7 @@ StableStrength := 2.5
 UnstableStrength := 2.5
 Division := 1.2
 
-StabilizerSpamLoop := 5
+StabilizerSpamLoop := 10
 
 RightAnkleBreakerMultiplier := 1
 LeftAnkleBreakerMultiplier := 0.7
@@ -270,7 +270,7 @@ COCKERS := 0
 COCKERM := 0
 COCKERH := 0
 TimerToggleOnce := true
-settimer, COCK, 1000
+settimer, COCK, 2000
 gosub, calculations
 tooltip, Press O To Reload, tooltipSide, tooltip4, 4
 tooltip, Press M To Exit, tooltipSide, tooltip5, 5
@@ -299,7 +299,7 @@ if (AutoLowGraphics == true)
 		send {f10 up}
 		sleep 100
 		}
-	sleep 150
+	sleep 1000
 	send {shift up}
 	sleep %KeyInputDelayForImportantKeys%
 	send {shift down}
@@ -358,7 +358,7 @@ if (AutoZoom == true)
 		send {wheelup}
 		sleep 50
 		}
-	sleep 200
+	sleep 250
 	send {wheeldown}
 	}
 
